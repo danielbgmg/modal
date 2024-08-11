@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-todo">
+            <span class="todo-title">Hey, Daniel</span>
+            <div class="iconPerfil">
+
+            </div>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Qual a sua tarefa?">
+                <button type="submit" class="btn-add">
+                    <i class="ai-plus"></i>
+                </button>
+            </form>
+        </header>
+        <form id="edit-form" class="hide">
+            <span>Edite sua tarefa: </span>
+            <div>
+                <input type="text" id="edit-input">
+                <button type="submit" class="btn-add">
+                    <i class="ai-pencil"></i>
+                </button>
+            </div>
+        </form>
+        <div class="todo">
+            <ul id="todo-list">
+                <li class="todo-itens">
+                    <span class="todo-itemName">
+                    Fazer o To Do List
+                    </span>   
+                    <button class="finish-todo">
+                        <i class="ai-double-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="ai-pencil"></i>
+                    </button>
+                    <button class="delete-todo">
+                        <i class="ai-trash-can"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
